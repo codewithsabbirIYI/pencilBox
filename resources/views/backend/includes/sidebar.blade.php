@@ -37,12 +37,11 @@
                 <div class="menu-title">Product</div>
             </a>
             <ul>
-                <li> <a href="app-emailbox.html"><i class="bx bx-right-arrow-alt"></i>Manage Product</a>
+                <li> <a href="{{ Route('all.product') }}"><i class="bx bx-right-arrow-alt"></i>All Product</a>
                 </li>
                 <li> <a href="{{ Route('add.product') }}"><i class="bx bx-right-arrow-alt"></i>Add Product</a>
                 </li>
-                <li> <a href="app-file-manager.html"><i class="bx bx-right-arrow-alt"></i>Edit Product</a>
-                </li>
+                
             </ul>
         </li>
     </ul>

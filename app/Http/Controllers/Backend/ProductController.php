@@ -14,7 +14,8 @@ class ProductController extends Controller
      */
     public function index()
     {
-        //
+       $products = Product::all();
+       return view('backend.product.allProduct', compact('products'));
     }
 
     /**
@@ -50,7 +51,7 @@ class ProductController extends Controller
         $product->quantity = $request->quantity;
         $product->status = '1';
         $product->save();
-        return back();
+        return redirect()->Route('all.product')->with('message', 'Product Added Successfully');
     }
 
     /**
@@ -82,6 +83,8 @@ class ProductController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $product = Product::find($id);
+        $product->delete();
+        return redirect()->Route('all.product')->with('message', 'Product Delete Successfully');
     }
 }

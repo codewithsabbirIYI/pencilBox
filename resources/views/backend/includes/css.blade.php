@@ -11,6 +11,9 @@
 	<link href="{{asset('backend')}}/assets/css/bootstrap.min.css" rel="stylesheet">
 	<link href="{{asset('backend')}}/assets/css/app.css" rel="stylesheet">
 	<link href="{{asset('backend')}}/assets/css/icons.css" rel="stylesheet">
+    {{-- bootstrap for data table  --}}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css">
 	<!-- Theme Style CSS -->
 	<link rel="stylesheet" href="{{asset('backend')}}/assets/css/dark-theme.css" />
 	<link rel="stylesheet" href="{{asset('backend')}}/assets/css/semi-dark.css" />
