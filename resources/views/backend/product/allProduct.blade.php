@@ -39,7 +39,7 @@
                                         <td>{{$product->quantity}}</td>
                                         <td>{{$product->status}}</td>
                                         <td>
-                                            <a href="" class="btn btn-info btn-xm">Edit</a>
+                                            <a href="{{Route('edit.product', $product->id)}}" class="btn btn-info btn-xm">Edit</a>
                                             <a href="{{Route('delete.product', $product->id)}}" class="btn btn-danger btn-xm">Delete</a>
                                         </td>
                                     </tr>
