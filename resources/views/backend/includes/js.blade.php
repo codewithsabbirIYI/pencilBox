@@ -21,15 +21,26 @@
 	<script src="{{asset('backend')}}/assets/plugins/sparkline-charts/jquery.sparkline.min.js"></script>
 	<script src="{{asset('backend')}}/assets/plugins/jquery-knob/excanvas.js"></script>
 	<script src="{{asset('backend')}}/assets/plugins/jquery-knob/jquery.knob.js"></script>
+    {{-- toster link here  --}}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
 	  <script>
 		  $(function() {
 			  $(".knob").knob();
 		  });
 
+
+          toastr.options = {
+            'closeButton': true,
+            'progressBar': true,
+          }
+          @if (Session::has('message'))
+            toastr.success("{{ session('message') }}");
+          @endif
 	  </script>
 	  <script src="{{asset('backend')}}/assets/js/index.js"></script>
 	<!--app JS-->
 	<script src="{{asset('backend')}}/assets/js/app.js"></script>
+
 </body>
 
 </html>

@@ -19,3 +19,6 @@
 	<link rel="stylesheet" href="{{asset('backend')}}/assets/css/semi-dark.css" />
 	<link rel="stylesheet" href="{{asset('backend')}}/assets/css/header-colors.css" />
 	<title>Rukada - Responsive Bootstrap 5 Admin Template</title>
+
+    {{-- toster link here  --}}
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
