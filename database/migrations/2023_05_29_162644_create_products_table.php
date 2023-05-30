@@ -19,7 +19,7 @@ return new class extends Migration
             $table->float('cost_price');
             $table->float('sale_price');
             $table->float('quantity');
-            $table->float('status');
+            $table->integer('status');
             $table->timestamps();
         });
     }

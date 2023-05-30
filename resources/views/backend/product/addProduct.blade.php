@@ -27,24 +27,31 @@
                         <label for="product_name" class="col-sm-3 col-form-label">Product Name</label>
                         <div class="col-sm-9">
                             <input type="text" class="form-control" id="product_name" placeholder="Enter Product Name" name="product_name">
+
+                            @error('product_name')
+                                <span class="text-danger">{{$message}}</span>
+                            @enderror
                         </div>
                     </div>
                     <div class="row mb-3">
                         <label for="product_desc" class="col-sm-3 col-form-label">Product Description</label>
                         <div class="col-sm-9">
                             <textarea class="form-control" id="product_desc" rows="3" placeholder="Enter Product Description" name="product_desc"></textarea>
+
+                            @error('product_desc')
+                                <span class="text-danger">{{$message}}</span>
+                            @enderror
                         </div>
                     </div>
-                    <div class="row mb-3">
-                        <label for="product_desc" class="col-sm-3 col-form-label">Product Description</label>
-                        <div class="col-sm-9">
-                            <input type="text" class="form-control" id="product_desc" placeholder="Enter Product Description" name="product_desc">
-                        </div>
-                    </div>
+
                     <div class="row mb-3">
                         <label for="cost_price" class="col-sm-3 col-form-label">Product Cost Prise</label>
                         <div class="col-sm-9">
                             <input type="text" class="form-control" id="cost_price" placeholder="Enter Product Cost Prise" name="cost_price">
+
+                            @error('cost_price')
+                                <span class="text-danger">{{$message}}</span>
+                            @enderror
                         </div>
                     </div>
 
@@ -52,12 +59,20 @@
                         <label for="sale_price" class="col-sm-3 col-form-label">Product Sale Prise</label>
                         <div class="col-sm-9">
                             <input type="text" class="form-control" id="sale_price" placeholder="Enter Product Sale Prise" name="sale_price">
+
+                            @error('sale_price')
+                                <span class="text-danger">{{$message}}</span>
+                            @enderror
                         </div>
                     </div>
                     <div class="row mb-3">
                         <label for="quantity" class="col-sm-3 col-form-label">Product Qunatity</label>
                         <div class="col-sm-9">
                             <input type="text" class="form-control" id="quantity" placeholder="Enter Product Quantity" name="quantity">
+
+                            @error('quantity')
+                                <span class="text-danger">{{$message}}</span>
+                            @enderror
                         </div>
                     </div>
 

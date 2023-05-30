@@ -49,6 +49,7 @@ class ProductController extends Controller
         $product->sale_price = $request->sale_price;
         $product->quantity = $request->quantity;
         $product->status = '1';
+        $product->save();
         return back();
     }
 
